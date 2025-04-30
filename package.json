@@ -1,0 +1,23 @@
+{
+  "name": "pdf-img",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --hot index.ts"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250425.0",
+    "@types/bun": "latest",
+    "wrangler": "^4.13.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.796.0",
+    "@aws-sdk/lib-storage": "^3.796.0",
+    "hono": "^4.7.7",
+    "jspdf": "^3.0.1",
+    "pdf-to-png-converter": "^3.6.5"
+  }
+}
